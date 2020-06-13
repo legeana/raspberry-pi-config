@@ -1,0 +1,11 @@
+function maybe_add_group {
+  getent gropu "$1" >/dev/null 2>&1 || groupadd -r "$1"
+}
+
+function post_install {
+  maybe_add_group gpio
+  maybe_add_group i2c
+  maybe_add_group spi
+
+  echo "Make sure to configure /etc/wpa_supplicant/wpa_supplicant-wlan0.conf"
+}
