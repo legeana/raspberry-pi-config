@@ -1,6 +1,6 @@
 # Maintainer: Lisa White <lisa.rsfp+dev@gmail.com>
 pkgname=legeana-raspberry-pi-config
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=1
 epoch=
 pkgdesc="Raspberry Pi configuration"
@@ -49,4 +49,5 @@ package() {
   install -Dm644 "$srcdir/gpio.rules" "$pkgdir/etc/udev/rules.d/gpio.rules"
   install -Dm644 "$srcdir/wlan0.network" "$pkgdir/etc/systemd/network/wlan0.network"
   install -Dm600 "$srcdir/wpa_supplicant-wlan0.conf" "$pkgdir/etc/wpa_supplicant/wpa_supplicant-wlan0.conf"
+  ln -sf /usr/share/zoneinfo/Europe/Dublin "$pkgdir/etc/localtime"
 }
