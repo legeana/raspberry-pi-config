@@ -1,6 +1,6 @@
 # Maintainer: Lisa White <lisa.rsfp+dev@gmail.com>
 pkgname=legeana-raspberry-pi-config
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 epoch=
 pkgdesc="Raspberry Pi configuration"
@@ -25,7 +25,11 @@ optdepends=(
 provides=()
 conflicts=()
 replaces=()
-backup=()
+backup=(
+  'etc/udev/rules.d/gpio.rules'
+  'etc/systemd/network/wlan0.network'
+  'etc/wpa_supplicant/wpa_supplicant-wlan0.conf'
+)
 options=()
 install=
 changelog=

@@ -1,6 +1,6 @@
 pkgbase = legeana-raspberry-pi-config
 	pkgdesc = Raspberry Pi configuration
-	pkgver = 0.0.1
+	pkgver = 0.0.2
 	pkgrel = 1
 	install = rpi-config.install
 	arch = any
@@ -13,6 +13,9 @@ pkgbase = legeana-raspberry-pi-config
 	optdepends = bindfs: cooperative development
 	optdepends = python-gpiozero: gpio library
 	optdepends = python-raspberry-gpio: gpio library
+	backup = etc/udev/rules.d/gpio.rules
+	backup = etc/systemd/network/wlan0.network
+	backup = etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 	source = gpio.rules
 	source = wlan0.network
 	source = wpa_supplicant-wlan0.conf
