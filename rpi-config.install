@@ -1,5 +1,5 @@
 function maybe_add_group {
-  getent gropu "$1" >/dev/null 2>&1 || groupadd -r "$1"
+  getent group "$1" >/dev/null 2>&1 || groupadd -r "$1"
 }
 
 function post_install {

@@ -1,7 +1,7 @@
 # Maintainer: Lisa White <lisa.rsfp+dev@gmail.com>
 pkgname=legeana-raspberry-pi-config
 pkgver=0.0.4
-pkgrel=1
+pkgrel=2
 epoch=
 pkgdesc="Raspberry Pi configuration"
 arch=('any')

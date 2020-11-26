@@ -1,7 +1,7 @@
 pkgbase = legeana-raspberry-pi-config
 	pkgdesc = Raspberry Pi configuration
 	pkgver = 0.0.4
-	pkgrel = 1
+	pkgrel = 2
 	install = rpi-config.install
 	arch = any
 	license = MIT
