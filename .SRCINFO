@@ -1,10 +1,11 @@
 pkgbase = legeana-raspberry-pi-config
 	pkgdesc = Raspberry Pi configuration
-	pkgver = 0.0.3
+	pkgver = 0.0.4
 	pkgrel = 1
 	install = rpi-config.install
 	arch = any
 	license = MIT
+	depends = brcmfmac43456-firmware
 	depends = inetutils
 	depends = man-db
 	depends = mlocate

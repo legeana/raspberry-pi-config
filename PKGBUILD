@@ -1,6 +1,6 @@
 # Maintainer: Lisa White <lisa.rsfp+dev@gmail.com>
 pkgname=legeana-raspberry-pi-config
-pkgver=0.0.3
+pkgver=0.0.4
 pkgrel=1
 epoch=
 pkgdesc="Raspberry Pi configuration"
@@ -9,6 +9,7 @@ url=""
 license=('MIT')
 groups=()
 depends=(
+  'brcmfmac43456-firmware'  # Pi 400 WiFi
   'inetutils'
   'man-db'
   'mlocate'
